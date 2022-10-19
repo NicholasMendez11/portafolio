@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import htmlIcon from "../public/assets/html.png";
 const Skills = () => {
   const [show, setShow] = useState(false);
 
@@ -64,7 +65,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/html.png"
+                  src={htmlIcon}
                   alt="/"
                   width="64px"
                   height="64px"
