@@ -9,7 +9,7 @@ import css from "../public/css.jpg";
 import tailwind from "../public/tailwind.jpg";
 import node from "../public/node.jpg";
 import nextjs from "../public/nextjs.jpg";
-import github from "../public/github.jpg";
+import github from "../public/github1.jpg";
 
 const Skills = () => {
   const [show, setShow] = useState(false);
