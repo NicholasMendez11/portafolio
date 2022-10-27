@@ -18,11 +18,10 @@ const Main = () => {
 
           <h1 className="py-1 text-gray-700"> A Software Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            Looking forward to expanding my skills and knowledge within the
-            software development industry, contributing with ideas, solutions,
-            and results in a meaningful way. A faithful believer in teamwork,
-            how this allows us to achieve more, and that success is always
-            better when is shared.
+          2 years of experience. Creating systems to address business needs.
+            Focussed on building front-end web applications, cross-mobile
+            applications, Android native apps with jetpack Compose. I have
+            experience developing integrations for Zoho&apos;s CRM and BPM.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                 <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
