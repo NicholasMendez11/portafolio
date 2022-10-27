@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
-import htmlIcon from "../public/assets/html.png";
+import htmlIcon from "../public/html.jpg";
 const Skills = () => {
   const [show, setShow] = useState(false);
 
