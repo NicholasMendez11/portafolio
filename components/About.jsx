@@ -11,7 +11,7 @@ const About = () => {
           </p>
           <h2 className="py-4">WHO I AM</h2>
           <p className="py-2 text-gray-600">
-            Sotfware developer. Looking forward to expanding my skills and
+            Sotfware developer looking forward to expanding my skills and
             knowledge within the software development industry, contributing
             with ideas, solutions, and results in a meaningful way. A faithful
             believer in teamwork, how this allows us to achieve more, and that
@@ -22,8 +22,8 @@ const About = () => {
           <p className="py-2 text-gray-600">
             2 years of experience. Creating systems to address business needs.
             Focussed on building front-end web applications, cross-mobile
-            applications, Android native apps with jetpack Compose. I have
-            experience developing integrations for Zoho&apos;s CRM and BPM.
+            applications, Android native apps with jetpack Compose, and
+            developing integrations for Zoho&apos;s CRM and BPM.
           </p>
           <br />
           <p className="py-2 text-gray-600 underline cursor-pointer">
