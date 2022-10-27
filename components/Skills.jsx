@@ -3,6 +3,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import htmlIcon from "../public/html.jpg";
+import javascript from "../public/javascript.jpg";
+import react from "../public/react.jpg";
+import css from "../public/css.jpg";
+import tailwind from "../public/tailwind.jpg";
+import node from "../public/node.jpg";
+import nextjs from "../public/nextjs.jpg";
+import github from "../public/github.jpg";
+
 const Skills = () => {
   const [show, setShow] = useState(false);
 
@@ -33,7 +41,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/javascript.png"
+                  src="/../public/javascript.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
