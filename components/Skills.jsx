@@ -57,7 +57,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/react.png"
+                  src="/../public/react.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
@@ -89,7 +89,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/css.png"
+                  src="/../public/css.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
@@ -105,7 +105,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/tailwind.png"
+                  src="/../public/tailwind.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
@@ -121,7 +121,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/node.png"
+                  src="/../public/node.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
@@ -137,7 +137,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/nextjs.png"
+                  src="/../public/nextjs.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
@@ -153,7 +153,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/github1.png"
+                  src="/../public/github1.jpg"
                   alt="/"
                   width="64px"
                   height="64px"
