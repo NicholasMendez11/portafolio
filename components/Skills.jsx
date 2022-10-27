@@ -10,6 +10,10 @@ import tailwind from "../public/tailwind.jpg";
 import node from "../public/node.jpg";
 import nextjs from "../public/nextjs.jpg";
 import github from "../public/github1.jpg";
+import kotlin from "../public/kotlin.jpg";
+import flutter from "../public/flutter.jpg";
+import jetpack from "../public/jetpack.jpg";
+import firebase from "../public/firebase.jpg";
 
 const Skills = () => {
   const [show, setShow] = useState(false);
@@ -188,14 +192,14 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/kotlin.png"
+                  src={kotlin}
                   alt="/"
                   width="64px"
                   height="64px"
                 />
               </div>
               <div className=" m-auto tracking-widest">
-                <h3>Amazon Web Services</h3>
+                <h3>Kotlin</h3>
               </div>
             </div>
           </div>
@@ -204,14 +208,14 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/flutter.png"
+                  src={flutter}
                   alt="/"
                   width="64px"
                   height="64px"
                 />
               </div>
               <div className=" m-auto tracking-widest">
-                <h3>Amazon Web Services</h3>
+                <h3>Flutter</h3>
               </div>
             </div>
           </div>
@@ -220,14 +224,14 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/jetpack.png"
+                  src={jetpack}
                   alt="/"
                   width="64px"
                   height="64px"
                 />
               </div>
               <div className=" m-auto tracking-widest">
-                <h3>Amazon Web Services</h3>
+                <h3>Jetpack Compose</h3>
               </div>
             </div>
           </div>
@@ -235,14 +239,14 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
                 <Image
-                  src="/../public/firebase.png"
+                  src={firebase}
                   alt="/"
                   width="64px"
                   height="64px"
                 />
               </div>
               <div className=" m-auto tracking-widest">
-                <h3>Amazon Web Services</h3>
+                <h3>Firebase</h3>
               </div>
             </div>
           </div>
