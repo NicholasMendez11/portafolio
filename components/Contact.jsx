@@ -6,10 +6,12 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Link from "next/link";
+import { Player } from "@lottiefiles/react-lottie-player";
+import { Link as Scroll } from "react-scroll";
 
 const Contact = () => {
   return (
-    <div id='contact'className="w-full lg:h-screen">
+    <div id="contact" className="w-full lg:h-screen">
       <div className="max-w[1240px] m-auto px-9 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           {" "}
@@ -21,25 +23,21 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full rounded-xl shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full ">
               <div>
-                <Image
-                  className="rounded-xl hover:scale-105 ease-in duration-300"
-                  src={Me}
-                  height='1300px'
-                  width="1300px"
-                  alt=""
+                <Player
+                  src="https://assets3.lottiefiles.com/packages/lf20_w51pcehl.json"
+                  loop
+                  autoplay
                 />
               </div>
               <div>
-                <h2 className="py-3">Nicholas Mendez</h2>
-                <p>Front-End Developer</p>
-                <p className="py-4 font-bold">
+                <p className="py-4 font-bold text-center">
                   {" "}
-                  I am available for mid and full-time possition. Feel free to
-                  reach me out and let&apos;s talk{" "}
+                  I am available for mid and full-time possition. <br />
+                  Feel free to reach me out and let&apos;s talk{" "}
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect with me</p>
+                <p className="uppercase pt-8 text-center">Connect with me</p>
                 <div className="flex items-center justify-between py-4">
                   <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
@@ -100,22 +98,35 @@ const Contact = () => {
                   <label className="uppercase text-sm py-2">Subject</label>
                   <textarea
                     type="text"
-                    className="border-2 rounded-lg p-3 flex border-gray-300" rows='10'
+                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    rows="10"
                   />
                 </div>
-                <button className="w-full p-4 mt-5 text-gray-100">Send Message</button>
-
-
+                <button className="w-full p-4 mt-5 text-gray-100">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
         </div>
-        <div className='flex justify-center py-12 '>
-            <Link href="/">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
-                    <HiOutlineChevronDoubleUp className="text-[#5651e5]" size={30}/>
-                </div>
-            </Link>
+        <div className="flex justify-center py-12 ">
+          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
+            <Scroll
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <Player
+                src="https://assets5.lottiefiles.com/packages/lf20_YUUKAZ.json"
+                loop
+                autoplay
+                
+              />
+            </Scroll>
+          </div>
         </div>
       </div>
     </div>

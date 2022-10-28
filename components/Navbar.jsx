@@ -6,7 +6,8 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import { Link as Scroll, animateScroll } from "react-scroll";
+import { Link as Scroll } from "react-scroll";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -71,54 +72,57 @@ const Navbar = () => {
             style={{ backgroundColor: { linkColor } }}
             className="hidden md:flex"
           >
-            
-              <Scroll
-                activeClass="active"
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                <li className="ml-10 text-sm uppercase hover:border-b">Home</li>{" "}
-              </Scroll>
-            
             <Scroll
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}>
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>{" "}
+            </Scroll>
+
+            <Scroll
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Scroll>
             <Scroll
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}>
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Scroll>
             <Scroll
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}>
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
             </Scroll>
             <Scroll
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}>
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -140,12 +144,12 @@ const Navbar = () => {
           variants={variants}
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 overflow-scroll"
               : "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10"
           }
         >
           <div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex w-full items-center justify-between  ">
               <Image
                 src="/../public/assets/Logo.png"
                 alt="/"
@@ -166,6 +170,12 @@ const Navbar = () => {
               </p>
             </div>
             <div className="py-4 flex-col">
+            <Player
+                src="https://assets5.lottiefiles.com/packages/lf20_0yfsb3a1.json"
+                loop
+                autoplay
+                className="h-30"
+              />
               <ul className="uppercase">
                 <Link href="/#home">
                   <li className="py-4 text-sm">Home</li>
@@ -190,10 +200,22 @@ const Navbar = () => {
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursosr-pointer hover:scale-105 ease-in duration-500">
-                    <FaLinkedinIn />
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://www.linkedin.com/in/nicholasgmendez/"
+                    >
+                      <FaLinkedinIn />
+                    </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursosr-pointer hover:scale-105 ease-in duration-500">
-                    <FaGithub />
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://github.com/NicholasMendez11"
+                    >
+                      <FaGithub />
+                    </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursosr-pointer hover:scale-105 ease-in duration-500">
                     <AiOutlineMail />

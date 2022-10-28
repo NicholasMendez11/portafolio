@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../public/logo.jpg";
+import { Link as Scroll } from "react-scroll";
 import { Player } from '@lottiefiles/react-lottie-player';
 const About = () => {
   return (
@@ -28,7 +29,15 @@ const About = () => {
           </p>
           <br />
           <p className="py-2 text-gray-600 underline cursor-pointer">
+          <Scroll
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}>
             Check out some of my latest projects
+            </Scroll>
           </p>
         </div>
         <div className=" w-full h-auto hover:cursor-pointer flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">

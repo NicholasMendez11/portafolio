@@ -4,17 +4,14 @@ import { motion } from "framer-motion";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import htmlIcon from "../public/html.jpg";
 import javascript from "../public/javascript.jpg";
-import react from "../public/react.jpg";
 import css from "../public/css.jpg";
 import tailwind from "../public/tailwind.jpg";
 import node from "../public/node.jpg";
 import nextjs from "../public/nextjs.jpg";
-import github from "../public/github1.jpg";
-import kotlin from "../public/kotlin.jpg";
 import flutter from "../public/flutter.jpg";
 import jetpack from "../public/jetpack.jpg";
 import firebase from "../public/firebase.jpg";
-
+import { Player } from "@lottiefiles/react-lottie-player";
 const Skills = () => {
   const [show, setShow] = useState(false);
 
@@ -50,6 +47,7 @@ const Skills = () => {
                   width="64px"
                   height="64px"
                 />
+                 
               </div>
               <div className=" m-auto tracking-widest">
                 <h2>Javascript</h2>
@@ -60,12 +58,13 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
-                <Image
-                  src={react}
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+                
+                <Player
+                src="https://assets10.lottiefiles.com/packages/lf20_b23ll34c.json"
+                loop
+                autoplay
+                className="h-[64px] w-[64px]"
+              />
               </div>
               <div className=" m-auto tracking-widest">
                 <h2>React</h2>
@@ -156,12 +155,12 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
-                <Image
-                  src={github}
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+              <Player
+                src="https://lottie.host/ec8d0912-df34-4a1f-816d-41543f9630df/chVSzSYd7L.json"
+                loop
+                autoplay
+                className="h-[64px] w-[64px]"
+              />
               </div>
               <div className=" m-auto tracking-widest">
                 <h2>GitHub</h2>
@@ -191,12 +190,12 @@ const Skills = () => {
           <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto pt-5">
-                <Image
-                  src={kotlin}
-                  alt="/"
-                  width="64px"
-                  height="64px"
-                />
+              <Player
+                src="https://assets7.lottiefiles.com/packages/lf20_yftb6ea8.json"
+                loop
+                autoplay
+                className="h-[64px] w-[64px]"
+              />
               </div>
               <div className=" m-auto tracking-widest">
                 <h3>Kotlin</h3>

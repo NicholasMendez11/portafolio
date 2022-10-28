@@ -20,12 +20,12 @@ const Projects = () => {
           <Project
             title="Crypto checker"
             backgroundImage={crypto}
-            projectUrl="/crypto"
+            projectUrl="/notFound"
           />
           <Project
             title="WikiMusic"
             backgroundImage={music}
-            projectUrl="/Wikimusic"
+            projectUrl="/notFound"
           />
           
         </div>
