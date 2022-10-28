@@ -2,6 +2,7 @@ import React from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Link from "next/link";
 import Image from "next/image";
+import logo from '../public/logo.jpg';
 const notFound = () => {
   return (
     <div className="h-screen w-screen flex flex-col justify-center items-center">
@@ -9,7 +10,7 @@ const notFound = () => {
         {" "}
         <div className=" m-2 md:m-5 ">
         <Link href="/">
-        <Image src="/../public/logo.jpg" className="hover:cursor-pointer" alt="/" width="120" height="120" />
+        <Image src={logo} className="hover:cursor-pointer" alt="/" width="120" height="120" />
         </Link>
        
         </div>
