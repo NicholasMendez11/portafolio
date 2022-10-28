@@ -11,20 +11,20 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest">
             Lets work in something awesome together
           </p>
-          <h1 className="py-4 text-gray-700">
+          <h1 className="py-4 text-gray-700  dark:text-gray-200">
             {" "}
-            Hi, I&apos;m <span className="text-[#004AAD]">Nicholas</span>
+            Hi, I&apos;m <span className="text-[#004AAD] dark:text-[#6a9bdb]">Nicholas</span>
           </h1>
 
-          <h1 className="py-1 text-gray-700"> A Software Developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <h1 className="py-1 text-gray-700 dark:text-gray-200"> A Software Developer</h1>
+          <p className="py-4 text-gray-600  dark:text-gray-200 max-w-[70%] m-auto">
             2 years of experience. Creating systems to address business needs.
             Focussed on building front-end web applications, cross-mobile
             applications, Android native apps with jetpack Compose, and
             developing integrations for Zoho&apos;s CRM and BPM.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
+            <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-900 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -33,7 +33,7 @@ const Main = () => {
                 <FaLinkedinIn />
               </a>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
+            <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-900 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
               <a
                 target="_blank"
                 rel="noreferrer"
@@ -42,10 +42,10 @@ const Main = () => {
                 <FaGithub />
               </a>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
+            <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-900 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
               <AiOutlineMail />
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
+            <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-900 p-6 cursosr-pointer hover:scale-110 hover:cursor-pointer ease-in duration-500">
               <a
                 target="_blank"
                 rel="noreferrer"

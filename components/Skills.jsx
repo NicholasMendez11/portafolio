@@ -33,7 +33,7 @@ const Skills = () => {
   return (
     <div id='skills' className="w-full lg:h-screen p-2">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-        <p className="text-xl tracking-widest uppercase text-[#5651e5]">
+        <p className="text-xl tracking-widest uppercase text-[#004AAD]  dark:text-[#3b88ec]">
           Skills
         </p>
         <h2 className="py-4">What I can do</h2>
@@ -160,6 +160,7 @@ const Skills = () => {
                 loop
                 autoplay
                 className="h-[64px] w-[64px]"
+                
               />
               </div>
               <div className=" m-auto tracking-widest">

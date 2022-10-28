@@ -32,14 +32,14 @@ const property = () => {
             the api and display the results. The purpose of this was to practice
             react skills and add it to my personal portfolio.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">
+          <button className="px-8 py-2 mt-4 mr-8 bg-gradient-to-r from-[#089ec0] to-[#3a7bd5]">
           <a
               target="_blank"
               rel="noreferrer"
               href="https://boisterous-salamander-1c910e.netlify.app/"
             >
             Demo </a></button>
-          <button className="px-8 py-2 mt-4 mr-8">
+          <button className="px-8 py-2 mt-4 mr-8 bg-gradient-to-r from-[#089ec0] to-[#3a7bd5]">
             <a
               target="_blank"
               rel="noreferrer"
@@ -49,42 +49,42 @@ const property = () => {
             </a>
           </button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
-          <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies</p>
-            <div className="grid grid-cols-3 md:grid-cols-1">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl p-4">
+          <div className="p-2 ">
+            <p className="text-center font-bold pb-2 ">Technologies</p>
+            <div className="grid grid-cols-3 md:grid-cols-1 ">
               <div>
-                <p className="text-gray-600 py-2 flex items-center">
+                <p className="text-gray-600 dark:text-white  py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" />
                   HTML
                 </p>
               </div>
               <div>
-                <p className="text-gray-600 py-2 flex items-center">
+                <p className="text-gray-600dark:text-white  py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" />
                   CSS
                 </p>
               </div>
               <div>
-                <p className="text-gray-600 py-2 flex items-center">
+                <p className="text-gray-600 dark:text-white py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" />
                   Javascript
                 </p>
               </div>
               <div>
-                <p className="text-gray-600 py-2 flex items-center">
+                <p className="text-gray-600 dark:text-white py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" />
                   React
                 </p>
               </div>
               <div>
-                <p className="text-gray-600 py-2 flex items-center">
+                <p className="text-gray-600 dark:text-white py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" />
                   Boostrap
                 </p>
               </div>
               <div>
-                <p className="text-gray-600 py-2 flex items-center">
+                <p className="text-gray-600 dark:text-white py-2 flex items-center">
                   <RiRadioButtonFill className="pr-1" />
                   News API
                 </p>

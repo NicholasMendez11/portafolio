@@ -8,11 +8,11 @@ const About = () => {
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-10 ">
         <div className="col-span-2">
-          <p className=" uppercase text-xl tracking-widest text-[#004AAD]">
+          <p className=" uppercase text-xl tracking-widest text-[#004AAD] dark:text-[#3b88ec] ">
             About
           </p>
-          <h2 className="py-4">WHO I AM</h2>
-          <p className="py-2 text-gray-600">
+          <h2 className="py-4  dark:text-white-200">WHO I AM</h2>
+          <p className="py-2 text-gray-600  dark:text-gray-200">
             Sotfware developer looking forward to expanding my skills and
             knowledge within the software development industry, contributing
             with ideas, solutions, and results in a meaningful way. A faithful
@@ -21,14 +21,14 @@ const About = () => {
           </p>
 
           <br />
-          <p className="py-2 text-gray-600">
+          <p className="py-2 text-gray-600  dark:text-gray-200">
             2 years of experience. Creating systems to address business needs.
             Focussed on building front-end web applications, cross-mobile
             applications, Android native apps with jetpack Compose, and
             developing integrations for Zoho&apos;s CRM and BPM.
           </p>
           <br />
-          <p className="py-2 text-gray-600 underline cursor-pointer">
+          <p className="py-2 text-gray-600 underline cursor-pointer dark:text-gray-200">
           <Scroll
                 activeClass="active"
                 to="projects"
