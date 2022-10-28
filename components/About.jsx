@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../public/logo.jpg";
+import { Player } from '@lottiefiles/react-lottie-player';
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
@@ -30,14 +31,9 @@ const About = () => {
             Check out some of my latest projects
           </p>
         </div>
-        <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image
-            className="rounded-xl bg-gradient-to-r from-[#3a7bd5] to-[#E6DADA]"
-            src={Logo}
-            alt="/"
-            width="600"
-            height="500"
-          />
+        <div className=" w-full h-auto hover:cursor-pointer flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        
+          <Player src="https://assets8.lottiefiles.com/private_files/lf30_obidsi0t.json" loop autoplay />
         </div>
       </div>
     </div>
