@@ -277,6 +277,7 @@ const Navbar = () => {
                 >
                   <li className="py-4 text-sm">Contact</li>
                 </Scroll>
+                <li>{renderThemeChanger()}</li>
               </ul>
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#004AAD]  dark:text-[#3b88ec]">
