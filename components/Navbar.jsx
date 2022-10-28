@@ -8,19 +8,19 @@ import { useRouter } from "next/router";
 import { Link as Scroll } from "react-scroll";
 import { Player } from "@lottiefiles/react-lottie-player";
 import logo from "../public/logo.jpg";
-import {useTheme} from 'next-themes';
+import { useTheme } from "next-themes";
 const Navbar = () => {
   const [nav, setnav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const router = useRouter();
   const [linkColor, setLinkColor] = useState("#1f2937");
-  const {systemTheme, theme, setTheme} = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     //theme
-    setMounted(true)
+    setMounted(true);
     //end theme
     if (
       router.asPath === "/property" || // check this thing
@@ -54,20 +54,33 @@ const Navbar = () => {
 
   const renderThemeChanger = () => {
     if (!mounted) return null;
-    const currentTheme = theme === 'system' ? systemTheme : theme
+    const currentTheme = theme === "system" ? systemTheme : theme;
 
-    if(currentTheme === 'dark'){
+    if (currentTheme === "dark") {
       return (
-        <button className="" onClick={() => setTheme('light')}>
-       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-</svg>
+        
+        <button className="" onClick={() => setTheme("light")}>
 
-      </button>
-      )
-    } else{
+          
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            />
+          </svg>
+        </button>
+      );
+    } else {
       return (
-        <button className="" onClick={() => setTheme('dark')}>
+        <button className="" onClick={() => setTheme("dark")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -85,7 +98,6 @@ const Navbar = () => {
         </button>
       );
     }
-    
   };
 
   const variants = {
@@ -165,8 +177,8 @@ const Navbar = () => {
               </li>
             </Scroll>
             <li className="ml-10 text-sm uppercase hover:border-b">
-                {renderThemeChanger()}
-              </li>
+              {renderThemeChanger()}
+            </li>
           </ul>
           <div onClick={handleNav} className="md:hidden">
             <AiOutlineMenu size={25} />
