@@ -27,18 +27,27 @@ const property = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            New searcher works via a rest api provided by newsdata.io After
+            specifying both the category and the country, we send the query to
+            the api and display the results. The purpose of this was to practice
+            react skills and add it to my personal portfolio.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4 mr-8">Code</button>
+          <button className="px-8 py-2 mt-4 mr-8">
+          <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://boisterous-salamander-1c910e.netlify.app/"
+            >
+            Demo </a></button>
+          <button className="px-8 py-2 mt-4 mr-8">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/NicholasMendez11/News-Searcher"
+            >
+              Code
+            </a>
+          </button>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">

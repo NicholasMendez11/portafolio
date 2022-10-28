@@ -61,12 +61,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#ecf0f3]">
-        <Image
-          src="/../public/logo.jpg"
-          alt="/"
-          width="125"
-          height="125"
-        />
+        <Image src="/../public/logo.jpg" alt="/" width="125" height="125" />
         <div>
           <ul
             style={{ backgroundColor: { linkColor } }}
@@ -135,8 +130,9 @@ const Navbar = () => {
       </div>
 
       <div
+      onClick={handleNav}
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 hover:cursor-pointer" : ""
         }
       >
         <motion.div
@@ -144,18 +140,13 @@ const Navbar = () => {
           variants={variants}
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 overflow-scroll"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 overflow-scroll  hover:cursor-default"
               : "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between  ">
-              <Image
-                src="/../public/logo.jpg"
-                alt="/"
-                width="87"
-                height="87"
-              />
+              <Image src="/../public/logo.jpg" alt="/" width="87" height="87" />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -170,28 +161,63 @@ const Navbar = () => {
               </p>
             </div>
             <div className="py-4 flex-col">
-            <Player
+              <Player
                 src="https://assets5.lottiefiles.com/packages/lf20_0yfsb3a1.json"
                 loop
                 autoplay
                 className="h-30"
               />
               <ul className="uppercase">
-                <Link href="/#home">
+                <Scroll
+                  activeClass="active"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   <li className="py-4 text-sm">Home</li>
-                </Link>
-                <Link href="/#about">
+                </Scroll>
+                <Scroll
+                  activeClass="active"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   <li className="py-4 text-sm">About</li>
-                </Link>
-                <Link href="/#skills">
+                </Scroll>
+                <Scroll
+                  activeClass="active"
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   <li className="py-4 text-sm">Skills</li>
-                </Link>
-                <Link href="/#projects">
+                </Scroll>
+                <Scroll
+                  activeClass="active"
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   <li className="py-4 text-sm">Projects</li>
-                </Link>
-                <Link href="/#contact">
+                </Scroll>
+                <Scroll
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
                   <li className="py-4 text-sm">Contact</li>
-                </Link>
+                </Scroll>
               </ul>
               <div className="pt-40">
                 <p className="uppercase tracking-widest text-[#5651e5]">
