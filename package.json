@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
     "@lottiefiles/react-lottie-player": "^3.4.7",
+    "@tawk.to/tawk-messenger-react": "^2.0.1",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",
     "next-themes": "^0.2.1",

@@ -5,6 +5,7 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Navbar from '../components/Navbar'
+import LiveChat from '../components/LiveChat'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Skills/>
       <Projects/>
       <Contact/>
+      <LiveChat/>
       
     </div>
   )
