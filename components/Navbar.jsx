@@ -7,7 +7,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 import { Link as Scroll } from "react-scroll";
 import { Player } from "@lottiefiles/react-lottie-player";
-import logo from "../public/logo.jpg";
+import logo from "../public/santaLogo.png";
 import { useTheme } from "next-themes";
 const Navbar = () => {
   const [nav, setnav] = useState(false);
@@ -110,12 +110,12 @@ const Navbar = () => {
       style={{ backgroundColor: { navBg } }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20  z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] snow transition-3"
+          : "fixed w-full h-20  z-[100] snow transition-3  "
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#ecf0f3] dark:bg-[#1f2937] transition duration-300">
-        <Image src={logo} alt="/" width="125" height="125" />
+        <Image src={logo} alt="/" width="150" height="150" style={{marginTop:13}} />
         <div>
           <ul
             style={{ backgroundColor: { linkColor } }}

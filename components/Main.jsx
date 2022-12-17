@@ -13,14 +13,14 @@ const Main = () => {
           </p>
           <h1 className="py-4 text-gray-700  dark:text-gray-200">
             {" "}
-            Hi, I&apos;m <span className="text-[#004AAD] dark:text-[#6a9bdb]">Nicholas</span>
+            Hi, I&apos;m <span className="text-[#004AAD] dark:text-[#6a9bdb] animate-pulse hover:cursor-pointer">Nicholas</span>
           </h1>
 
           <h1 className="py-1 text-gray-700 dark:text-gray-200"> A Software Developer</h1>
           <p className="py-4 text-gray-600  dark:text-gray-200 max-w-[70%] m-auto">
             2 years of experience. Creating systems to address business needs.
-            Focussed on building front-end web applications, cross-mobile
-            applications, Android native apps with jetpack Compose, and
+            Focussed on building web applications, cross-mobile
+            applications with React Native, Android native apps with jetpack Compose, and
             developing integrations for Zoho&apos;s CRM and BPM.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

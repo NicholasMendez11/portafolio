@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import newsImage from "../public/assets/projects/News.png";
+import newsCapture from "../public/assets/projects/newsCapture.PNG";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -8,38 +9,37 @@ const property = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
+        <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/50 z-10" />
         <Image
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={newsImage}
+          src={newsCapture}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">News Finder</h2>
-          <h3> React js / Boostrap</h3>
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">News Finder</h2>
+          <h3 className="text-3xl font-bold text-white lg:text-xl sm:px-16 xl:px-48 "> <span className=" hover:cursor-pointer text-[#61DAFB] bg-[#282C34] p-2 rounded-md">React</span> <span className="hover:cursor-pointer bg-[#8A12FC] p-2 rounded-md">Boostrap</span></h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
-          <p>Project</p>
-          <h2>Overview</h2>
-          <p>
+          <h2 className="mb-4 text-md font-bold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Overview</h2>
+          <p className="mb-6 text-lg font-normal  dark:text-gray-400">
             New searcher works via a rest api provided by newsdata.io After
             specifying both the category and the country, we send the query to
             the api and display the results. The purpose of this was to practice
             react skills and add it to my personal portfolio.
           </p>
-          <button className="px-8 py-2 mt-4 mr-8 bg-gradient-to-r from-[#089ec0] to-[#3a7bd5]">
+          <button className="px-8 py-2 mt-4 mr-8 font-bold rounded-md bg-gradient-to-r from-[#089ec0] to-[#3a7bd5]">
           <a
               target="_blank"
               rel="noreferrer"
               href="https://boisterous-salamander-1c910e.netlify.app/"
             >
             Demo </a></button>
-          <button className="px-8 py-2 mt-4 mr-8 bg-gradient-to-r from-[#089ec0] to-[#3a7bd5]">
+          <button className="px-8 py-2 mt-4 mr-8 font-bold rounded-md bg-gradient-to-r from-[#089ec0] to-[#3a7bd5]">
             <a
               target="_blank"
               rel="noreferrer"

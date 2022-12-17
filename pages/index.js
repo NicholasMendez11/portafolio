@@ -10,7 +10,7 @@ import LiveChat from '../components/LiveChat'
 export default function Home() {
   return (
     
-    <div >
+    <div>
       
       <Head>
         <title>Nicholas Mendez | Software Developer</title>
@@ -18,7 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
+      
       <Main/>
+      
       <About/>
       <Skills/>
       <Projects/>

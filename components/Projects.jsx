@@ -2,6 +2,8 @@ import React from "react";
 import Project from "./ProjectItem";
 import newsImg from "../public/assets/projects/News.png";
 import crypto from "../public/assets/projects/Crypto.png";
+import NOTO from "../public/assets/projects/NOTO.png";
+import NotoLogo from "../public/assets/projects/NotoLogo.png";
 import music from "../public/assets/projects/Music.png";
 const Projects = () => {
   return (
@@ -13,9 +15,16 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve built</h2>
         <div className="grid md:grid-cols-2 gap-5">
           <Project
+            title="NOTO APP"
+            backgroundImage={NotoLogo}
+            projectUrl="/noto"
+            projectSummary="React Native App"
+          />
+          <Project
             title="News Finder"
             backgroundImage={newsImg}
             projectUrl="/property"
+            projectSummary="React js"
           />
           <Project
             title="Crypto checker"
