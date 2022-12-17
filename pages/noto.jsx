@@ -86,12 +86,7 @@ const Noto = () => {
                 </p>
               </div>
               
-              <div>
-                <p className="text-gray-600 dark:text-white py-2 flex items-center">
-                  <RiRadioButtonFill className="pr-1" />
-                  News API
-                </p>
-              </div>
+              
             </div>
           </div>
         </div>
