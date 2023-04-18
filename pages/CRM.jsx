@@ -45,7 +45,7 @@ const CRM = () => {
             the sales process. A mini CRM app will includes features such as
             contact management, lead tracking, sales forecasting, task
             management, and reporting. It can help businesses to better
-            understand their customers' needs and preferences, improve customer
+            understand their customers&apos; needs and preferences, improve customer
             service, and ultimately increase sales and revenue. Mini CRM apps
             are typically designed to be user-friendly and affordable for small
             businesses with limited resources. ⚒️ Work in Progress...

@@ -38,7 +38,7 @@ const BarberExclusiveApp = () => {
             Overview
           </h2>
           <p className="mb-6 text-lg font-normal  dark:text-gray-400">
-            Welcome to our barber shop's scheduling and appointment app, built
+            Welcome to our barber shop&apos; s scheduling and appointment app, built
             using React Native and Expo! Our app allows you to easily book an
             appointment with your favorite barber and select your desired
             haircut from the convenience of your mobile device. With a simple
