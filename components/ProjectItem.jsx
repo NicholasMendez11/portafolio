@@ -10,6 +10,7 @@ const ProjectItem = ({title,backgroundImage,projectUrl,projectSummary}) => {
         height='400px'
         className="rounded-xl group-hover:opacity-10 ease-in duration-200 hover:cursor-pointer object-fit	"
         src={backgroundImage}
+        objectFit="cover"
         alt="/"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
