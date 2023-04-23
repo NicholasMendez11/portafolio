@@ -1,13 +1,28 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
-
-const ProjectItem = ({title,backgroundImage,projectUrl,projectSummary}) => {
+const ProjectItem = ({
+  title,
+  backgroundImage,
+  projectUrl,
+  projectSummary,
+}) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00d2ff] to-[#3a7bd5]">
+    <motion.div
+      initial={{ scale: 0, x:200 }}
+      whileInView={{x:0, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
+      whileHover={{scale:1.2}}
+      className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 dark:shadow-gray-900 rounded-xl p-4 group hover:bg-gradient-to-r from-[#00d2ff] to-[#3a7bd5]"
+    >
       <Image
-        height='400px'
+        height="400px"
         className="rounded-xl group-hover:opacity-10 ease-in duration-200 hover:cursor-pointer object-fit	"
         src={backgroundImage}
         objectFit="cover"
@@ -24,7 +39,7 @@ const ProjectItem = ({title,backgroundImage,projectUrl,projectSummary}) => {
           </p>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

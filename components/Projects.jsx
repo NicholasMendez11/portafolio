@@ -16,7 +16,7 @@ const Projects = () => {
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve built</h2>
-        <div className="grid md:grid-cols-4 gap-2">
+        <div className="grid md:grid-cols-4">
           <Project
             title="NOTO APP"
             backgroundImage={NotoLogo}
