@@ -17,13 +17,13 @@ const Home = () => {
       <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
           {/* title */}
-          <motion.h1 variants={fadeIn('down',0.2)} initial="hidden" animate="show" exit="hidden" className="h1">
+          <motion.h1 variants={fadeIn('down',0.2)} initial="hidden" animate="show" exit="hidden" className="h1 mb-2 text-[25px]">
           Crafting Innovative Solutions <br />with{""}{" "}
             <span className="text-accent">  Flutter, React and </span><span className=" text-accent cursor-pointer">more</span>
           </motion.h1>
           
           {/* subtitle */}
-          <motion.p variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+          <motion.p variants={fadeIn('down',0.3)} initial="hidden" animate="show" exit="hidden" className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 ">
           Welcome to my portfolio! As a seasoned software developer, I find immense satisfaction in transforming innovative concepts into exceptional digital experiences. I specialize in building seamless web applications, intuitive mobile apps, and robust CRM systems using technologies like Flutter and React. Let&apos;s collaborate and bring your technological dreams to life through innovation and expertise!
 
 

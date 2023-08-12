@@ -420,8 +420,12 @@ const About = () => {
               );
             })}
           </div>
+          
         </motion.div>
+     
       </div>
+      <div className="h-screen lg:h-0 bg-blue-950 mb-40"></div>
+
     </div>
   );
 };
