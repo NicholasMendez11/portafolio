@@ -19,7 +19,7 @@ const Primeriza = () => {
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
             Primeriza RD
           </h2>
-          <h3 className="text-3xl font-bold text-white lg:text-xl sm:px-16 xl:px-48 ">
+          <h3 className="md:text-3xl font-bold text-white lg:text-xl sm:px-16 xl:px-48 ">
             {" "}
             <span className=" hover:cursor-pointer text-[#feffff] bg-[#2b2c2d] p-2 rounded-md">
               NEXT JS

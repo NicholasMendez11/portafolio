@@ -19,7 +19,7 @@ const BarberExclusiveApp = () => {
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
             Barber Exclsive app
           </h2>
-          <h3 className="text-3xl font-bold text-white lg:text-xl sm:px-16 xl:px-48 ">
+          <h3 className="md:text-3xl font-bold text-white lg:text-xl sm:px-16 xl:px-48 ">
             {" "}
             <span className=" hover:cursor-pointer text-[#61DAFB] bg-[#282C34] p-2 rounded-md">
               React Native
@@ -51,7 +51,7 @@ const BarberExclusiveApp = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/NicholasMendez11/NOTO--No-Tommorow-App-"
+              href="https://github.com/NicholasMendez11/cruz-barber-exclusive.git"
             >
               Code
             </a>

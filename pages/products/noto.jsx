@@ -19,7 +19,7 @@ const Noto = () => {
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white">
             NOTO
           </h2>
-          <h3 className="text-3xl font-bold text-white lg:text-xl sm:px-16 xl:px-48 ">
+          <h3 className="md:text-3xl font-bold text-white lg:text-xl  xl:px-48 ">
             {" "}
             <span className=" hover:cursor-pointer text-[#feffff] bg-[#53bad6] p-2 rounded-md">
               Flutter
@@ -52,7 +52,7 @@ const Noto = () => {
             <a
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/NicholasMendez11/NOTO--No-Tommorow-App-"
+              href="https://github.com/NicholasMendez11/productiva"
             >
               Code
             </a>
