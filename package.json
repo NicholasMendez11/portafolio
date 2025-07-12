@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@next/font": "^13.4.4",
     "@vercel/analytics": "^1.0.2",
     "axios": "^1.4.0",
@@ -22,7 +23,8 @@
     "react-type-animation": "^3.2.0",
     "swiper": "^9.4.0",
     "tailwind-scrollbar": "^3.0.4",
-    "tsparticles": "^2.9.3"
+    "tsparticles": "^2.9.3",
+    "zustand": "^5.0.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

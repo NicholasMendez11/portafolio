@@ -7,7 +7,12 @@ import Circles from '../../components/Circles';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
+// translations
+import { useTranslations } from '../_app';
+
 const Services = () => {
+  const t = useTranslations('services');
+
   return (
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
@@ -22,7 +27,7 @@ const Services = () => {
               exit='hidden'
               className='h2 xl:mt-8 mt-10'
             >
-              My services <span className='text-accent'>.</span>
+              {t('title')} <span className='text-accent'>.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn('up', 0.4)}
@@ -31,7 +36,7 @@ const Services = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-left'
             >
-              Discover tailored and innovative software solutions. From custom applications to captivating web and mobile development, I offer a range of services to elevate your business.
+              {t('subtitle')}
             </motion.p>
           </div>
 
@@ -51,5 +56,13 @@ const Services = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../locales/${locale}.json`)).default,
+    },
+  };
+}
 
 export default Services;

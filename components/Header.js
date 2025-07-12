@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 // components
 import Socials from '../components/Socials';
+import LanguageSelector from '../components/LanguageSelector';
 
 const Header = () => {
   return (
@@ -22,8 +23,11 @@ const Header = () => {
               priority={true}
             />
           </Link>
-          {/* socials */}
-          <Socials />
+          {/* socials and language selector */}
+          <div className='flex items-center gap-6'>
+            <Socials />
+            <LanguageSelector />
+          </div>
         </div>
       </div>
     </header>

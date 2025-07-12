@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
 import React, { useState } from "react";
+import { useTranslations } from '../_app';
 
 //icons
 import {
   FaCss3,
-  FaFigma,
   FaHtml5,
   FaJs,
   FaReact,
@@ -12,6 +12,7 @@ import {
   FaNodeJs,
   FaVuejs,
   FaAws,
+  FaRobot,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -33,14 +34,15 @@ import {
   SiMysql,
   SiSqlite,
   SiTailwindcss,
-  SiMaterialdesign,
-  SiMiro,
   SiTwilio,
   SiNestjs,
   SiAmazonaws,
   SiRailway,
   SiDocker,
   SiReact,
+  SiOpenai,
+  SiTensorflow,
+  SiPython,
 } from "react-icons/si";
 //Components
 
@@ -197,78 +199,87 @@ const aboutData = [
         ],
       },
       {
-        title: "DB & DEVOPS",
+        title: "AI Development",
         icons: [
           // eslint-disable-next-line react/jsx-key
 
           <div class="tooltip">
-            <SiAmazonaws className="hover:text-[#e5dc35db] transition-all duration-300" />
-            <span class="tooltiptext">Amazon web services</span>
+            <SiOpenai className="hover:text-[#4ca26e] transition-all duration-300" />
+            <span class="tooltiptext">OpenAI MCP</span>
           </div>,
           <div class="tooltip">
-            <SiRailway className="hover:text-[#945bf0db] transition-all duration-300" />
-            <span class="tooltiptext">Railway</span>
+            <FaRobot className="hover:text-[#DE8E12] transition-all duration-300" />
+            <span class="tooltiptext">Anthropic MCP</span>
           </div>,
           <div class="tooltip">
-            <SiDocker className="hover:text-[#945bf0db] transition-all duration-300" />
-            <span class="tooltiptext">Docker</span>
+            <SiTensorflow className="hover:text-[#FF6600] transition-all duration-300" />
+            <span class="tooltiptext">TensorFlow</span>
           </div>,
           <div class="tooltip">
-            <SiMongodb className="hover:text-[#0D9C4F] transition-all duration-300" />
-            <span class="tooltiptext">MongoDB</span>
-          </div>,
-          <div class="tooltip">
-            <SiMysql className="hover:text-[#E48E01] transition-all duration-300" />
-            <span class="tooltiptext">MySQL</span>
-          </div>,
-          <div class="tooltip">
-            <SiSqlite className="hover:text-red-[#77C4ED] transition-all duration-300" />
-            <span class="tooltiptext">SQLite</span>
+            <SiPython className="hover:text-[#3776AB] transition-all duration-300" />
+            <span class="tooltiptext">Python AI</span>
           </div>,
         ],
       },
       {
-        title: "UI/UX Design",
+        title: "Database & Cloud",
         icons: [
+          // eslint-disable-next-line react/jsx-key
+
           <div class="tooltip">
-            <FaFigma className="hover:text-[#F24D1D] transition-all duration-300" />
-            <span class="tooltiptext">Figma</span>
+            <SiMongodb className="hover:text-[#4DB33D] transition-all duration-300" />
+            <span class="tooltiptext">MongoDB</span>
           </div>,
           <div class="tooltip">
-            <SiMaterialdesign className="hover:text-[#00AFFE] transition-all duration-300" />
-            <span class="tooltiptext">Material design</span>
+            <SiMysql className="hover:text-[#00618A] transition-all duration-300" />
+            <span class="tooltiptext">MySQL</span>
           </div>,
           <div class="tooltip">
-            <SiMiro className="hover:text-[#FFC532] transition-all duration-300" />
-            <span class="tooltiptext">Miro</span>
+            <SiSqlite className="hover:text-[#1F7FBE] transition-all duration-300" />
+            <span class="tooltiptext">SQLite</span>
+          </div>,
+          <div class="tooltip">
+            <SiGraphql className="hover:text-[#e535ab] transition-all duration-300" />
+            <span class="tooltiptext">GraphQL</span>
+          </div>,
+          <div class="tooltip">
+            <SiAmazonaws className="hover:text-[#FF9900] transition-all duration-300" />
+            <span class="tooltiptext">AWS</span>
+          </div>,
+          <div class="tooltip">
+            <SiDocker className="hover:text-[#2496ED] transition-all duration-300" />
+            <span class="tooltiptext">Docker</span>
+          </div>,
+          <div class="tooltip">
+            <SiRailway className="hover:text-[#0C0C0C] transition-all duration-300" />
+            <span class="tooltiptext">Railway</span>
           </div>,
         ],
       },
     ],
   },
-
   {
     title: "experience",
     info: [
       {
-        title: "Software Development Lead - Xploy Solutions",
-        stage: "2023 - present",
+        title: "Software Development Lead",
+        stage: "Xploy Solutions",
       },
       {
-        title: "Software Developer - IDT Corporation",
-        stage: "2021 - present",
+        title: "Senior Full Stack Developer",
+        stage: "Doral Health Wellness",
       },
       {
-        title: "Front End Engineer - Version Do",
-        stage: "2023 - Dec 2023",
+        title: "Senior Software Developer",
+        stage: "IDT Corporation",
       },
       {
-        title: "CRM Software Coordinator - Marmotech",
-        stage: "2022 - 2023",
+        title: "Senior Software Developer",
+        stage: "Marmotech",
       },
       {
-        title: "Workforce Analyst - Scotia GBS",
-        stage: "2020 - 2021",
+        title: "Workforce Analyst",
+        stage: "Scotia GBS",
       },
     ],
   },
@@ -276,29 +287,58 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Applied Technologies - Brigham Young University Idaho",
-        stage: "present",
+        title: "BS in Applied Technologies - Brigham Young University Idaho - In Progress",
+        stage: "",
       },
-      // {
-      //   title: "Computer Science Diploma - AV Technical Institute",
-      //   stage: "2009",
-      // },
-      // {
-      //   title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-      //   stage: "2006",
-      // },
     ],
   },
   {
-    title: "References",
+    title: "references",
     info: [
       {
-        title: "Francis Cristina Lebron",
-        stage: "Hidden Phone Number",
+        title: "IDT Corporation",
+        references: [
+          {
+            name: "Alfania Mendoza",
+            title: "Team Manager IDT/CITC",
+            linkedin: "https://www.linkedin.com/in/alfania-mendoza-36b7a7138/",
+          },
+          {
+            name: "Oussama Elhaddad",
+            title: "Senior Software Developer",
+            linkedin: "https://www.linkedin.com/in/oussama-elhaddad-9a2b04104/",
+          },
+        ],
       },
       {
-        title: "Sariah Angomas",
-        stage: "Hidden Phone Number",
+        title: "Xploy Solutions",
+        references: [
+          {
+            name: "Obed Garcia",
+            title: "Senior Mobile Developer",
+            linkedin: "https://www.linkedin.com/in/obed-garcia-6a908b194/",
+          },
+          {
+            name: "Winston Pichardo",
+            title: "Senior Web Developer",
+            linkedin: "https://www.linkedin.com/in/winston-pichardo-9a1a42179/",
+          },
+        ],
+      },
+      {
+        title: "Doral Health Wellness",
+        references: [
+          {
+            name: "Starlin Gil",
+            title: "Senior Software Developer",
+            linkedin: "https://www.linkedin.com/in/starlin-gil-01b58b125/",
+          },
+          {
+            name: "Gorakshnath Kharde",
+            title: "Senior Software Developer",
+            linkedin: "https://www.linkedin.com/in/gorakshnath-kharde-1b0a3b1a7/",
+          },
+        ],
       },
     ],
   },
@@ -306,22 +346,29 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
+  const t = useTranslations('about');
+  const tStats = useTranslations('stats');
+  const tExperience = useTranslations('experience');
+  const tReferences = useTranslations('references');
+
   console.log(index);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
-      <Circles />
+    <div className="min-h-screen bg-primary/30 pt-24 pb-24 xl:py-32 text-left xl:pb-8">
+      <div className="hidden xl:block">
+        <Circles />
+      </div>
       {/* Avatar image */}
       <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[370px]"
+        className="hidden xl:flex absolute bottom-0 -left-[370px] z-0"
       >
         <Avatar />
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row">
-        <div className="flex-1 flex-col justify-center">
+      <div className="container mx-auto flex flex-col xl:flex-row px-4 xl:px-0 gap-8 xl:gap-0 mt-10">
+        <div className="flex-1 flex flex-col justify-start xl:justify-center">
           {/* Text */}
           <motion.h2
             variants={fadeIn("right", 0.2)}
@@ -330,23 +377,25 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Experienced
-            <span className="text-accent "> Software</span> Developer
+            {t('title')}
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="max-w-[500px] mb-6 xl:mb-12"
           >
-            Experienced software developer with a strong track record of over 3
-            years in the industry. Throughout my career, I have successfully
-            developed web applications, mobile applications, and CRM systems. My
-            passion for coding drives me to deliver efficient and user-friendly
-            solutions. I thrive on challenges and continuously seek
-            opportunities to grow and innovate in the ever-evolving tech
-            landscape. Let&apos;s work together to bring your ideas to life!
+            {t('description')}
+          </motion.p>
+          <motion.p
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mb-6 xl:mb-12"
+          >
+            {t('detailedDescription')}
           </motion.p>
           {/* counters */}
           <motion.div
@@ -354,44 +403,44 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="flex md:max-w-xl xl:max-w-none mb-6 overflow-x-auto pb-2"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1 gap-x-3 xl:gap-x-6 min-w-max">
               {/* experience */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={3} duration={5} />+
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[80px]">
+                <div className="text-xl xl:text-4xl font-extrabold text-accent mb-1 xl:mb-2">
+                  {tStats('years')}
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Years of experience
-                </div>
-              </div>
-              {/* projects */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={16} duration={5} />+
-                </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished projects
+                <div className="text-[10px] xl:text-xs uppercase tracking-[1px] leading-[1.2] xl:leading-[1.4] max-w-[80px] xl:max-w-[100px]">
+                  {t('yearsExperience')}
                 </div>
               </div>
-              {/* lines of codes */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={13038} duration={5} />+
+              {/* enterprise solutions */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[80px]">
+                <div className="text-xl xl:text-4xl font-extrabold text-accent mb-1 xl:mb-2">
+                  {tStats('projects')}
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Lines of Code Developed
+                <div className="text-[10px] xl:text-xs uppercase tracking-[1px] leading-[1.2] xl:leading-[1.4] max-w-[80px] xl:max-w-[100px]">
+                  {tStats('solutions')}
+                </div>
+              </div>
+              {/* system integrations */}
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 min-w-[80px]">
+                <div className="text-xl xl:text-4xl font-extrabold text-accent mb-1 xl:mb-2">
+                  {tStats('integrations')}
+                </div>
+                <div className="text-[10px] xl:text-xs uppercase tracking-[1px] leading-[1.2] xl:leading-[1.4] max-w-[80px] xl:max-w-[100px]">
+                  {tStats('systemIntegrations')}
                 </div>
               </div>
 
-              {/* Users Engaged with My Solutions" */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={1999} duration={5} />+
+              {/* project success rate */}
+              <div className="relative flex-1 min-w-[80px]">
+                <div className="text-xl xl:text-4xl font-extrabold text-accent mb-1 xl:mb-2">
+                  {tStats('success')}
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Users using my solutions
+                <div className="text-[10px] xl:text-xs uppercase tracking-[1px] leading-[1.2] xl:leading-[1.4] max-w-[80px] xl:max-w-[100px]">
+                  {tStats('successRate')}
                 </div>
               </div>
             </div>
@@ -403,9 +452,9 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] xl:h-[480px]"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
+          <div className="flex gap-x-2 xl:gap-x-8 mb-4 overflow-x-auto overflow-y-hidden">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -413,32 +462,67 @@ const About = () => {
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                  } hover:cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  } hover:cursor-pointer capitalize text-sm xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 whitespace-nowrap`}
                   onClick={() => setIndex(itemIndex)}
                 >
-                  {item.title}
+                  {item.title === 'skills' ? t('skills') : 
+                   item.title === 'experience' ? t('experience') :
+                   item.title === 'credentials' ? t('credentials') :
+                   item.title === 'references' ? t('references') : item.title}
                 </div>
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-3 flex flex-col gap-y-4 xl:gap-y-3 items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  className="flex-1 flex flex-col w-full gap-y-1 items-start text-white/60"
                 >
                   {/* title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="font-semibold text-white text-sm">
+                    {item.title}
+                  </div>
+                  {/* company or references */}
+                  {item.stage && (
+                    <div className="text-accent text-xs font-medium">
+                      {item.stage}
+                    </div>
+                  )}
+                  {/* references with tooltips */}
+                  {item.references && (
+                    <div className="flex flex-wrap gap-x-2 gap-y-1 mt-1">
+                      {item.references.map((ref, refIndex) => (
+                        <div key={refIndex} className="tooltip relative group">
+                          <a
+                            href={ref.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-accent text-xs font-medium cursor-pointer hover:text-white transition-colors duration-300"
+                          >
+                            {ref.name}
+                          </a>
+                          <div className="absolute pr-14 right-0 hidden group-hover:flex">
+                            <div className="bg-white relative flex text-primary items-center p-[4px] rounded-[3px] shadow-lg">
+                              <div className="text-[10px] leading-none font-semibold whitespace-nowrap">
+                                {ref.title}
+                              </div>
+                              {/* triangle */}
+                              <div className="border-solid border-l-white border-l-6 border-y-transparent border-y-[4px] border-r-0 absolute -right-1.5"></div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                   {/* icons */}
-                  <div className="flex gap-x-4">
+                  <div className="flex gap-x-3 gap-y-2 mt-1 flex-wrap justify-start">
                     {item.icons?.map((icon, iconIndex) => {
                       return (
                         <div
                           key={iconIndex}
-                          className="text-2xl hover:text-accent text-white"
+                          className="text-lg hover:text-accent text-white transition-colors duration-300"
                         >
                           {icon}
                         </div>
@@ -451,9 +535,16 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-      <div className="h-screen lg:h-0 bg-blue-950 mb-40"></div>
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../locales/${locale}.json`)).default,
+    },
+  };
+}
 
 export default About;

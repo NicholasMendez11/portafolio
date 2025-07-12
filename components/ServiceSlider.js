@@ -6,6 +6,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
+// translations
+import { useTranslations } from '../pages/_app';
+
 // icons
 import {
   RxCrop,
@@ -21,41 +24,33 @@ import {
 // import required modules
 import { FreeMode, Pagination } from "swiper";
 
-// service data
-export const serviceData = [
-  {
-    icon: <RxMobile />,
-    title: "Mobile App Development",
-    description:
-      "Captivating mobile apps to reach and engage your target audience.",
-  },
-  {
-    icon: <RxPencil2 />,
-    title: "Front-end Development",
-    description:
-      "Visually stunning user interfaces for enhanced user experiences.",
-  },
-  {
-    icon: <RxRocket />,
-    title: "Full-stack development",
-    description:
-      "Comprehensive solutions covering both front-end and back-end aspects.",
-  },
-  {
-    icon: <RxGear />,
-    title: "Enterprise CRM Solutions:",
-    description:
-      "Sophisticated software to streamline operations and foster growth.",
-  },
-  {
-    icon: <RxDesktop />,
-    title: "Custom Software Development",
-    description:
-      "Tailored solutions for your unique business needs, optimizing processes and boosting competitiveness.",
-  },
-];
-
 const ServiceSlider = () => {
+  const t = useTranslations('services');
+
+  // service data - moved inside component to access translations
+  const serviceData = [
+    {
+      icon: <RxMobile />,
+      title: t('mobileApps.title'),
+      description: t('mobileApps.description'),
+    },
+    {
+      icon: <RxPencil2 />,
+      title: t('webDevelopment.title'),
+      description: t('webDevelopment.description'),
+    },
+    {
+      icon: <RxRocket />,
+      title: t('backendApi.title'),
+      description: t('backendApi.description'),
+    },
+    {
+      icon: <RxGear />,
+      title: t('consulting.title'),
+      description: t('consulting.description'),
+    },
+  ];
+
   return (
     <Swiper
       breakpoints={{

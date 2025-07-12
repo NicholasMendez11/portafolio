@@ -1,0 +1,171 @@
+{
+  "common": {
+    "hello": "Hola",
+    "welcome": "Bienvenido",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "work": "Trabajo",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "home": "Inicio",
+    "portfolio": "Portafolio",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "references": "Referencias",
+    "loading": "Cargando...",
+    "comingSoon": "Próximamente",
+    "underDevelopment": "En Desarrollo"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "services": "Servicios",
+    "work": "Trabajo",
+    "testimonials": "Testimonios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "transforming": "Creando Soluciones",
+    "intoDigital": "Innovadoras con",
+    "reality": "",
+    "greeting": "Hola, soy",
+    "name": "Nicholas Mendez",
+    "title": "Desarrollador Full Stack",
+    "description": "Soy un Desarrollador Full Stack apasionado con más de 5 años de experiencia creando soluciones escalables y eficientes. Me especializo en tecnologías web modernas y tengo un historial comprobado de entregar aplicaciones de alta calidad que impulsan el crecimiento empresarial.",
+    "hireMe": "Contrátame",
+    "seeProjects": "Ver Proyectos"
+  },
+  "about": {
+    "title": "Acerca de Mí",
+    "subtitle": "Desarrollador apasionado creando experiencias digitales excepcionales",
+    "description": "Soy un Desarrollador Full Stack experimentado con más de 5 años de experiencia en la creación de aplicaciones web robustas y escalables. A lo largo de mi carrera, he diseñado soluciones integrales para proyectos de nivel empresarial, combinando experiencia técnica con pensamiento estratégico para brindar experiencias de usuario excepcionales.",
+    "detailedDescription": "Mi pasión radica en transformar requisitos comerciales complejos en soluciones digitales elegantes y eficientes. Tengo experiencia integral trabajando con tecnologías modernas como React, Node.js, Python y plataformas en la nube, mientras lidero iniciativas técnicas que impulsan la innovación y el crecimiento empresarial. Prospero en entornos colaborativos donde puedo contribuir con mi experiencia mientras aprendo de diversas perspectivas.",
+    "yearsExperience": "Años de Experiencia",
+    "satisfiedClients": "Clientes Satisfechos",
+    "projectsCompleted": "Proyectos Completados",
+    "awardsWon": "Premios Ganados",
+    "skills": "Habilidades",
+    "credentials": "Credenciales",
+    "degree": "Licenciatura en Tecnologías Aplicadas",
+    "university": "Universidad Brigham Young Idaho",
+    "status": "En Progreso"
+  },
+  "stats": {
+    "years": "5+",
+    "projects": "4+",
+    "solutions": "Soluciones Empresariales",
+    "integrations": "20+",
+    "systemIntegrations": "Integraciones de Sistemas",
+    "success": "100%",
+    "successRate": "Tasa de Éxito de Proyectos"
+  },
+  "experience": {
+    "title": "Experiencia",
+    "positions": {
+      "lead": "Líder de Desarrollo de Software",
+      "senior": "Desarrollador Full Stack Senior",
+      "developer": "Desarrollador de Software Senior",
+      "analyst": "Analista de Fuerza Laboral"
+    },
+    "companies": {
+      "xploy": "Xploy Solutions",
+      "doral": "Doral Health Wellness",
+      "idt": "IDT Corporation",
+      "marmotech": "Marmotech",
+      "scotia": "Scotia GBS"
+    }
+  },
+  "references": {
+    "title": "Referencias",
+    "subtitle": "Referencias profesionales de colegas actuales y anteriores",
+    "clickToView": "Haz clic para ver el perfil de LinkedIn",
+    "idt": {
+      "alfania": {
+        "name": "Alfania Mendoza",
+        "title": "Gerente de Equipo IDT/CITC"
+      },
+      "oussama": {
+        "name": "Oussama Elhaddad",
+        "title": "Desarrollador de Software Senior"
+      }
+    },
+    "xploy": {
+      "obed": {
+        "name": "Obed Garcia",
+        "title": "Desarrollador Móvil Senior"
+      },
+      "winston": {
+        "name": "Winston Pichardo",
+        "title": "Desarrollador Web Senior"
+      }
+    },
+    "doral": {
+      "starlin": {
+        "name": "Starlin Gil",
+        "title": "Desarrollador de Software Senior"
+      },
+      "gora": {
+        "name": "Gorakshnath Kharde",
+        "title": "Desarrollador de Software Senior"
+      }
+    }
+  },
+  "services": {
+    "title": "Mis Servicios",
+    "subtitle": "Descubre soluciones de software innovadoras y personalizadas. Desde aplicaciones personalizadas hasta desarrollo web y móvil cautivador, ofrezco una gama de servicios para elevar tu negocio.",
+    "webDevelopment": {
+      "title": "Desarrollo Web",
+      "description": "Sitios web modernos y responsivos construidos con las últimas tecnologías"
+    },
+    "mobileApps": {
+      "title": "Aplicaciones Móviles",
+      "description": "Aplicaciones móviles multiplataforma para iOS y Android"
+    },
+    "backendApi": {
+      "title": "Backend y API",
+      "description": "Soluciones de backend escalables y desarrollo de API RESTful"
+    },
+    "consulting": {
+      "title": "Consultoría Técnica",
+      "description": "Orientación técnica estratégica y planificación de arquitectura"
+    }
+  },
+  "work": {
+    "title": "Trabajo",
+    "subtitle": "Mi Portafolio",
+    "status": "Los proyectos profesionales están siendo refinados para mostrar aplicaciones listas para producción de nivel empresarial.",
+    "message": "Actualmente estoy mejorando mi portafolio con proyectos profesionales pulidos que demuestran capacidades técnicas avanzadas e impacto empresarial.",
+    "backToHome": "Volver al Inicio"
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Lo Que Dicen los Clientes"
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Ponte en Contacto",
+    "description": "¿Listo para trabajar juntos? Discutamos tu proyecto y hagamos realidad tus ideas.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar el mensaje. Por favor intenta nuevamente."
+    },
+    "info": {
+      "address": "Dirección",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico"
+    }
+  },
+  "languageSelector": {
+    "label": "Idioma",
+    "english": "Inglés",
+    "spanish": "Español"
+  }
+} 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { useTranslations } from './_app';
 
 //components
 import ParticlesContainer from "../components/ParticlesContainer";
@@ -12,6 +13,8 @@ import { easeInOut, motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Home = () => {
+  const t = useTranslations('hero');
+
   return (
     <div className="bg-primary/60 h-screen w-screen mt-10 lg:mt-0 overflow-hidden leading-relaxed">
       {/* text */}
@@ -25,8 +28,8 @@ const Home = () => {
             exit="hidden"
             className="h1 mb-2 text-[45px]"
           >
-            Crafting Innovative Solutions <br />
-            with{" "}
+            {t('transforming')} <br />
+            {t('intoDigital')}{" "}
             <TypeAnimation
               sequence={[
                 "React",
@@ -51,11 +54,8 @@ const Home = () => {
               wrapper="span"
               speed={50}
               className="text-accent text-[40px]"
-              // style={{ fontSize: "2em", display: "inline-block" }}
               repeat={Infinity}
             />
-            {/* <span className="text-accent"> Flutter, React and </span> */}
-            {/* <span className=" text-accent cursor-pointer">more</span> */}
           </motion.h1>
 
           {/* subtitle */}
@@ -66,14 +66,7 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 "
           >
-            With years of experience in the tech industry, I am dedicated to
-            turning unique ideas into outstanding digital solutions. My
-            expertise spans developing smooth web applications, engaging mobile
-            apps, and reliable CRM and ERP systems. I've collaborated with
-            diverse clients to bring technological visions to reality, enhancing
-            user engagement and business efficiency. Let's connect and explore
-            how we can elevate your next project through innovative technology
-            and deep industry knowledge!
+            {t('description')}
           </motion.p>
           {/* btn */}
           <div className=" justify-center xl:hidden lg:flex hidden relative">
@@ -114,5 +107,13 @@ const Home = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../locales/${locale}.json`)).default,
+    },
+  };
+}
 
 export default Home;

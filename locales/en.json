@@ -1,0 +1,171 @@
+{
+  "common": {
+    "hello": "Hello",
+    "welcome": "Welcome",
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "references": "References",
+    "loading": "Loading...",
+    "comingSoon": "Coming Soon",
+    "underDevelopment": "Under Development"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "transforming": "Crafting Innovative",
+    "intoDigital": "Solutions with",
+    "reality": "",
+    "greeting": "Hello, I'm",
+    "name": "Nicholas Mendez",
+    "title": "Full Stack Developer",
+    "description": "I'm a passionate Full Stack Developer with 5+ years of experience creating scalable, efficient solutions. I specialize in modern web technologies and have a proven track record of delivering high-quality applications that drive business growth.",
+    "hireMe": "Hire Me",
+    "seeProjects": "See Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate developer creating exceptional digital experiences",
+    "description": "I'm a skilled Full Stack Developer with over 5 years of experience in creating robust, scalable web applications. Throughout my career, I've architected comprehensive solutions for enterprise-level projects, combining technical expertise with strategic thinking to deliver exceptional user experiences.",
+    "detailedDescription": "My passion lies in transforming complex business requirements into elegant, efficient digital solutions. I have comprehensive experience working with modern technologies like React, Node.js, Python, and cloud platforms, while leading technical initiatives that drive innovation and business growth. I thrive in collaborative environments where I can contribute my expertise while learning from diverse perspectives.",
+    "yearsExperience": "Years of Experience",
+    "satisfiedClients": "Satisfied Clients",
+    "projectsCompleted": "Projects Completed",
+    "awardsWon": "Awards Won",
+    "skills": "Skills",
+    "credentials": "Credentials",
+    "degree": "BS in Applied Technologies",
+    "university": "Brigham Young University Idaho",
+    "status": "In Progress"
+  },
+  "stats": {
+    "years": "5+",
+    "projects": "4+",
+    "solutions": "Enterprise Solutions",
+    "integrations": "20+",
+    "systemIntegrations": "System Integrations", 
+    "success": "100%",
+    "successRate": "Project Success Rate"
+  },
+  "experience": {
+    "title": "Experience",
+    "positions": {
+      "lead": "Software Development Lead",
+      "senior": "Senior Full Stack Developer",
+      "developer": "Senior Software Developer",
+      "analyst": "Workforce Analyst"
+    },
+    "companies": {
+      "xploy": "Xploy Solutions",
+      "doral": "Doral Health Wellness",
+      "idt": "IDT Corporation",
+      "marmotech": "Marmotech",
+      "scotia": "Scotia GBS"
+    }
+  },
+  "references": {
+    "title": "References",
+    "subtitle": "Professional references from current and previous colleagues",
+    "clickToView": "Click to view LinkedIn profile",
+    "idt": {
+      "alfania": {
+        "name": "Alfania Mendoza",
+        "title": "Team Manager IDT/CITC"
+      },
+      "oussama": {
+        "name": "Oussama Elhaddad", 
+        "title": "Senior Software Developer"
+      }
+    },
+    "xploy": {
+      "obed": {
+        "name": "Obed Garcia",
+        "title": "Senior Mobile Developer"
+      },
+      "winston": {
+        "name": "Winston Pichardo",
+        "title": "Senior Web Developer"
+      }
+    },
+    "doral": {
+      "starlin": {
+        "name": "Starlin Gil",
+        "title": "Senior Software Developer"
+      },
+      "gora": {
+        "name": "Gorakshnath Kharde",
+        "title": "Senior Software Developer"
+      }
+    }
+  },
+  "services": {
+    "title": "My Services",
+    "subtitle": "Discover tailored and innovative software solutions. From custom applications to captivating web and mobile development, I offer a range of services to elevate your business.",
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "Modern, responsive websites built with the latest technologies"
+    },
+    "mobileApps": {
+      "title": "Mobile Applications",
+      "description": "Cross-platform mobile applications for iOS and Android"
+    },
+    "backendApi": {
+      "title": "Backend & API",
+      "description": "Scalable backend solutions and RESTful API development"
+    },
+    "consulting": {
+      "title": "Technical Consulting",
+      "description": "Strategic technical guidance and architecture planning"
+    }
+  },
+  "work": {
+    "title": "Work",
+    "subtitle": "My Portfolio",
+    "status": "Professional projects are being refined to showcase production-ready, enterprise-grade applications.",
+    "message": "I'm currently enhancing my portfolio with polished, professional-grade projects that demonstrate advanced technical capabilities and business impact.",
+    "backToHome": "Back to Home"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What Clients Say"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get In Touch",
+    "description": "Ready to work together? Let's discuss your project and bring your ideas to life.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "languageSelector": {
+    "label": "Language",
+    "english": "English",
+    "spanish": "Spanish"
+  }
+} 

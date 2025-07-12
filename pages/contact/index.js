@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+// translations
+import { useTranslations } from '../_app';
+
 // icons
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -11,6 +14,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
 const Contact = () => {
+  const t = useTranslations('contact');
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -86,7 +91,7 @@ const Contact = () => {
             exit='hidden'
             className='h2 text-center mb-12'
           >
-          Will get to you shortly<span className='text-accent'> Thanks!.</span>
+          {t('form.success')}
           </motion.h2>: <motion.h2
             variants={fadeIn('up', 0.4)}
             initial='hidden'
@@ -94,7 +99,7 @@ const Contact = () => {
             exit='hidden'
             className='h2 text-center mb-12'
           >
-            Let&apos;s <span className='text-accent'>connect.</span>
+            {t('title')} <span className='text-accent'>{t('subtitle')}</span>
           </motion.h2>}
           {/* form */}
       {emailSent? null:<motion.form
@@ -107,14 +112,42 @@ const Contact = () => {
           >
             {/* input group */}
             <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='name' className='input' value={formData.name} onChange={handleChange} name='name' />
-              <input type='email' placeholder='email' className='input lowercase' value={formData.email} onChange={handleChange} name='email' />
+              <input 
+                type='text' 
+                placeholder={t('form.name')} 
+                className='input' 
+                value={formData.name} 
+                onChange={handleChange} 
+                name='name' 
+              />
+              <input 
+                type='email' 
+                placeholder={t('form.email')} 
+                className='input lowercase' 
+                value={formData.email} 
+                onChange={handleChange} 
+                name='email' 
+              />
             </div>
-            <input type='text' placeholder='subject' className='input' value={formData.subject} onChange={handleChange} name='subject' />
-            <textarea placeholder='message' autoCapitalize='false'  className='textarea' value={formData.message} onChange={handleChange} name='message'></textarea>
+            <input 
+              type='text' 
+              placeholder={t('form.subject')} 
+              className='input' 
+              value={formData.subject} 
+              onChange={handleChange} 
+              name='subject' 
+            />
+            <textarea 
+              placeholder={t('form.message')} 
+              autoCapitalize='false'  
+              className='textarea' 
+              value={formData.message} 
+              onChange={handleChange} 
+              name='message'
+            ></textarea>
             <button type='submit' className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
               <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>
-                Let&apos;s talk
+                {t('form.send')}
               </span>
               <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]' />
             </button>
@@ -124,5 +157,13 @@ const Contact = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../locales/${locale}.json`)).default,
+    },
+  };
+}
 
 export default Contact;

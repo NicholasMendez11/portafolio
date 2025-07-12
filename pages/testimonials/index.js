@@ -5,7 +5,12 @@ import TestimonialSlider from '../../components/TestimonialSlider';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../variants';
 
+// translations
+import { useTranslations } from '../_app';
+
 const Testimonials = () => {
+  const t = useTranslations('testimonials');
+
   return (
     <div className='h-full bg-primary/30 py-32 text-center'>
       <div className='container mx-auto h-full flex flex-col justify-center'>
@@ -17,7 +22,7 @@ const Testimonials = () => {
           exit='hidden'
           className='h2 mb-8 xl:mb-0'
         >
-          What coworkers have <span className='text-accent'>said.</span>
+          {t('title')} <span className='text-accent'>{t('subtitle')}</span>
         </motion.h2>
         {/* slider */}
         <motion.div
@@ -32,5 +37,13 @@ const Testimonials = () => {
     </div>
   );
 };
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../locales/${locale}.json`)).default,
+    },
+  };
+}
 
 export default Testimonials;
